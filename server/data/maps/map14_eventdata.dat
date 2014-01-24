@@ -1,5 +1,5 @@
 [Events]
-EventCount=1
+EventCount=2
 [Event1]
 Global=0
 x=12
@@ -150,7 +150,6 @@ CommandList17CommandCount=0
 CommandList17ParentList=11
 CommandList11Command1Text1=Log 2
 CommandList11Command2Index=3
-CommandList11Command2Text2=Stop reading.
 CommandList11Command2Text3=Previous  log
 CommandList11Command2Text4=Next log
 CommandList11Command2Data1=18
@@ -191,6 +190,11 @@ CommandList21CommandCount=0
 CommandList21ParentList=11
 CommandList11Command2Text1=Log 2: January 21st 2014.
 Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
+Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
+Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
+Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
+Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
+Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
 CommandList11Command3Index=32
 CommandList11Command3Text1=Log 3
 CommandList11Command3Data1=0
@@ -210,7 +214,11 @@ CommandList11Command4Index=3
 CommandList11Command4Text1=Log 3: January 23 2014
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
-CommandList11Command4Text2=Stop reading.
+Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
+Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
+Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
+Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
+Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
 CommandList11Command4Text3=Previous Log
 CommandList11Command4Text4=Next Log
 CommandList11Command4Data1=22
@@ -303,6 +311,8 @@ CommandList28CommandCount=0
 CommandList28ParentList=11
 CommandList29CommandCount=0
 CommandList29ParentList=11
+CommandList11Command2Text2=Stop reading.
+CommandList11Command4Text2=Stop reading.
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
 It has been a little over a year since I last touched this game, but I have finally been getting back into it. I changed some horrible font colors today, but more importantly OneMeenGamer, a new member, tried out for editor today. He was my first try out, and to say the least, he didn't do half bad.
 It has been a little over a year since I last touched this game, but I have finally been getting back into it. I changed some horrible font colors today, but more importantly OneMeenGamer, a new member, tried out for editor today. He was my first try out, and to say the least, he didn't do half bad.
@@ -316,3 +326,57 @@ It has been a little over a year since I last touched this game, but now I have 
 It has been a little over a year since I last touched this game, but now I have finally been getting back into it. A new member name OneMeenGamer tried out for admin/editor today. He was my first try out, and to say the least, I don't think he did half bad. Oh, and I changed some horrible font colors.
 It has been a little over a year since I last touched this game, but now I have finally been getting back into it. A new member name OneMeenGamer tried out for admin/editor today. He was my first try out, and to say the least, I don't think he did half bad.
 It has been a little over a year since I last touched this game, but now I have finally been getting back into it. A new member name OneMeenGamer tried out for admin/editor today. He was my first try out, and to say the least, I don't think he did half bad.
+[Event2]
+Global=0
+x=13
+y=6
+PageCount=1
+[Event2Page1]
+chkVariable=0
+VariableIndex=0
+VariableCondition=0
+VariableCompare=0
+chkSwitch=0
+SwitchIndex=0
+SwitchCompare=0
+chkHasItem=0
+HasItemIndex=0
+chkSelfSwitch=0
+SelfSwitchIndex=0
+SelfSwitchCompare=0
+GraphicType=0
+Graphic=0
+GraphicX=0
+GraphicY=0
+GraphicX2=0
+GraphicY2=0
+MoveType=0
+MoveSpeed=0
+MoveFreq=0
+IgnoreMoveRoute=0
+RepeatMoveRoute=0
+MoveRouteCount=0
+WalkAnim=0
+DirFix=0
+WalkThrough=0
+ShowName=0
+Trigger=0
+CommandListCount=1
+Position=0
+CommandList1CommandCount=1
+CommandList1ParentList=0
+CommandList1Command1Index=2
+CommandList1Command1Text1=Teawater's Logs #1: January 23, 2014: So today, I found out that there was a Developer Room where developers can hold logs. Thanks to Xiron. At time of writing, I have already worked on two rooms. One which has my house on it, and the other which will be a town where  Yoshi's Lighthouse will be.
+CommandList1Command1Data1=0
+CommandList1Command1Data2=0
+CommandList1Command1Data3=0
+CommandList1Command1Data4=0
+CommandList1Command1Data5=0
+CommandList1Command1Data6=0
+CommandList1Command1ConditionalBranchCommandList=0
+CommandList1Command1ConditionalBranchCondition=0
+CommandList1Command1ConditionalBranchData1=0
+CommandList1Command1ConditionalBranchData2=0
+CommandList1Command1ConditionalBranchData3=0
+CommandList1Command1ConditionalBranchElseCommandList=0
+CommandList1Command1MoveRouteCount=0
