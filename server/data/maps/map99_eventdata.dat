@@ -132,8 +132,8 @@ CommandList3CommandCount=0
 CommandList3ParentList=1
 [Event2]
 Global=0
-x=11
-y=4
+x=10
+y=5
 PageCount=1
 [Event2Page1]
 chkVariable=0
@@ -170,7 +170,7 @@ Position=0
 CommandList1CommandCount=1
 CommandList1ParentList=0
 CommandList1Command1Index=16
-CommandList1Command1Data1=12
+CommandList1Command1Data1=8
 CommandList1Command1Data2=0
 CommandList1Command1Data3=0
 CommandList1Command1Data4=0
