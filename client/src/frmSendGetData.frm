@@ -2,7 +2,7 @@ VERSION 5.00
 Begin VB.Form frmLoad 
    BackColor       =   &H00000000&
    BorderStyle     =   0  'None
-   ClientHeight    =   480
+   ClientHeight    =   1770
    ClientLeft      =   0
    ClientTop       =   -105
    ClientWidth     =   4200
@@ -11,12 +11,26 @@ Begin VB.Form frmLoad
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   32
+   ScaleHeight     =   118
    ScaleMode       =   3  'Pixel
    ScaleWidth      =   280
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Visible         =   0   'False
+   Begin VB.PictureBox Picture1 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   975
+      Left            =   150
+      Picture         =   "frmSendGetData.frx":3332
+      ScaleHeight     =   975
+      ScaleWidth      =   3900
+      TabIndex        =   1
+      Top             =   180
+      Width           =   3900
+   End
    Begin VB.Label lblStatus 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
@@ -33,7 +47,7 @@ Begin VB.Form frmLoad
       Height          =   225
       Left            =   0
       TabIndex        =   0
-      Top             =   120
+      Top             =   1380
       Width           =   4200
    End
 End
@@ -67,7 +81,7 @@ Private Sub Form_KeyPress(KeyAscii As Integer)
         Call DestroyTCP
         frmLoad.Hide
         frmMenu.Show
-        frmMenu.picMain.Visible = True
+        frmMenu.picMain.visible = True
     End If
 
     ' Error handler
@@ -89,7 +103,7 @@ Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
         Call DestroyTCP
         frmLoad.Hide
         frmMenu.Show
-        frmMenu.picMain.Visible = True
+        frmMenu.picMain.visible = True
     End If
 
     ' Error handler

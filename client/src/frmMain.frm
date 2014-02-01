@@ -27,7 +27,7 @@ Begin VB.Form frmMain
    Visible         =   0   'False
    Begin VB.PictureBox picAdmin 
       Appearance      =   0  'Flat
-      BackColor       =   &H00B5B5B5&
+      BackColor       =   &H00A0CF00&
       ForeColor       =   &H80000008&
       Height          =   8010
       Left            =   11760
@@ -39,38 +39,47 @@ Begin VB.Form frmMain
       Visible         =   0   'False
       Width           =   2865
       Begin VB.CommandButton cmdSSMap 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Screenshot Map"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   35
          Top             =   7560
          Width           =   2295
       End
       Begin VB.CommandButton cmdLevel 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Level Up"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   34
          Top             =   7200
          Width           =   2295
       End
       Begin VB.CommandButton cmdAAnim 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Animation"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   33
-         Top             =   4200
+         Top             =   3480
          Width           =   1095
       End
       Begin VB.CommandButton cmdAAccess 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Set Access"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   32
          Top             =   1800
          Width           =   2295
       End
       Begin VB.TextBox txtAAccess 
+         BackColor       =   &H00D0AFD0&
          Height          =   285
          Left            =   1440
          TabIndex        =   30
@@ -78,6 +87,7 @@ Begin VB.Form frmMain
          Width           =   1095
       End
       Begin VB.TextBox txtASprite 
+         BackColor       =   &H00D0AFD0&
          Height          =   285
          Left            =   2160
          TabIndex        =   28
@@ -85,25 +95,31 @@ Begin VB.Form frmMain
          Width           =   375
       End
       Begin VB.CommandButton cmdARespawn 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Respawn"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   27
          Top             =   5040
          Width           =   1095
       End
       Begin VB.CommandButton cmdASprite 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Set Sprite"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   26
          Top             =   2640
          Width           =   1095
       End
       Begin VB.CommandButton cmdASpawn 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Spawn Item"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   25
          Top             =   6720
          Width           =   2295
@@ -127,86 +143,107 @@ Begin VB.Form frmMain
          Width           =   2295
       End
       Begin VB.CommandButton cmdASpell 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Spell"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   20
          Top             =   3840
          Width           =   1095
       End
       Begin VB.CommandButton cmdAShop 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Shop"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   19
          Top             =   4200
          Width           =   1095
       End
       Begin VB.CommandButton cmdAResource 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Resource"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   18
-         Top             =   3480
+         Top             =   4200
          Width           =   1095
       End
       Begin VB.CommandButton cmdANpc 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "NPC"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   17
          Top             =   3840
          Width           =   1095
       End
       Begin VB.CommandButton cmdAMap 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Map"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   16
          Top             =   3120
          Width           =   1095
       End
       Begin VB.CommandButton cmdAItem 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Item"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   14
          Top             =   3480
          Width           =   1095
       End
       Begin VB.CommandButton cmdADestroy 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Del Bans"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   13
          Top             =   5040
          Width           =   1095
       End
       Begin VB.CommandButton cmdAMapReport 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Map Report"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   12
          Top             =   4680
          Width           =   1095
       End
       Begin VB.CommandButton cmdALoc 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Loc"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   11
          Top             =   4680
          Width           =   1095
       End
       Begin VB.CommandButton cmdAWarp 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Warp To"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   10
          Top             =   2640
          Width           =   1095
       End
       Begin VB.TextBox txtAMap 
+         BackColor       =   &H00D0AFD0&
          Height          =   285
          Left            =   960
          TabIndex        =   8
@@ -214,38 +251,48 @@ Begin VB.Form frmMain
          Width           =   375
       End
       Begin VB.CommandButton cmdAWarpMe2 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "WarpMe2"
          Height          =   255
-         Left            =   1440
+         Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   7
-         Top             =   1440
+         Top             =   1080
          Width           =   1095
       End
       Begin VB.CommandButton cmdAWarp2Me 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Warp2Me"
          Height          =   255
-         Left            =   240
+         Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   6
-         Top             =   1440
+         Top             =   1080
          Width           =   1095
       End
       Begin VB.CommandButton cmdABan 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Ban"
          Height          =   255
          Left            =   1440
+         Style           =   1  'Graphical
          TabIndex        =   5
-         Top             =   1080
+         Top             =   1440
          Width           =   1095
       End
       Begin VB.CommandButton cmdAKick 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Kick"
          Height          =   255
          Left            =   240
+         Style           =   1  'Graphical
          TabIndex        =   4
-         Top             =   1080
+         Top             =   1440
          Width           =   1095
       End
       Begin VB.TextBox txtAName 
+         BackColor       =   &H00D0AFD0&
          Height          =   285
          Left            =   240
          TabIndex        =   2

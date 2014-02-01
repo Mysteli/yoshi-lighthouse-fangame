@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmEditor_Map 
+   BackColor       =   &H00A0CF00&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Map Editor"
    ClientHeight    =   7455
@@ -26,9 +27,10 @@ Begin VB.Form frmEditor_Map
    StartUpPosition =   3  'Windows Default
    Visible         =   0   'False
    Begin VB.PictureBox picAttributes 
+      BackColor       =   &H00A0CF00&
       BorderStyle     =   0  'None
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   8.25
          Charset         =   238
          Weight          =   400
@@ -45,6 +47,7 @@ Begin VB.Form frmEditor_Map
       Visible         =   0   'False
       Width           =   7095
       Begin VB.Frame fraSoundEffect 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Sound Effect"
          Height          =   1455
          Left            =   1800
@@ -53,14 +56,17 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.CommandButton cmdSoundEffectOk 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   91
             Top             =   840
             Width           =   1455
          End
          Begin VB.ComboBox cmbSoundEffect 
+            BackColor       =   &H00D0AFD0&
             Height          =   300
             ItemData        =   "frmEditor_Map.frx":3332
             Left            =   240
@@ -72,6 +78,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraSlide 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Slide"
          Height          =   1455
          Left            =   1800
@@ -80,6 +87,7 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.ComboBox cmbSlide 
+            BackColor       =   &H00D0AFD0&
             Height          =   300
             ItemData        =   "frmEditor_Map.frx":335D
             Left            =   240
@@ -90,15 +98,18 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.CommandButton cmdSlide 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   86
             Top             =   840
             Width           =   1455
          End
       End
       Begin VB.Frame fraTrap 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Trap"
          Height          =   1575
          Left            =   1800
@@ -115,14 +126,17 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.CommandButton cmdTrap 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   82
             Top             =   960
             Width           =   1455
          End
          Begin VB.Label lblTrap 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Amount: 0"
             Height          =   255
             Left            =   240
@@ -132,6 +146,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraHeal 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Heal"
          Height          =   1815
          Left            =   1800
@@ -150,9 +165,11 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.CommandButton cmdHeal 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   78
             Top             =   1200
             Width           =   1455
@@ -166,6 +183,7 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.Label lblHeal 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Amount: 0"
             Height          =   255
             Left            =   240
@@ -175,6 +193,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraNpcSpawn 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Npc Spawn"
          Height          =   2655
          Left            =   1800
@@ -183,6 +202,7 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.ListBox lstNpc 
+            BackColor       =   &H00D0AFD0&
             Height          =   780
             Left            =   240
             TabIndex        =   39
@@ -198,14 +218,17 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.CommandButton cmdNpcSpawn 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   36
             Top             =   2040
             Width           =   1455
          End
          Begin VB.Label lblNpcDir 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Direction: Up"
             Height          =   255
             Left            =   240
@@ -215,6 +238,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraResource 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Object"
          Height          =   1695
          Left            =   1800
@@ -223,9 +247,11 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.CommandButton cmdResourceOk 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Okay"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   32
             Top             =   1080
             Width           =   1455
@@ -241,6 +267,7 @@ Begin VB.Form frmEditor_Map
             Width           =   2895
          End
          Begin VB.Label lblResource 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Object:"
             Height          =   255
             Left            =   240
@@ -250,6 +277,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraMapWarp 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Map Warp"
          Height          =   2775
          Left            =   1800
@@ -258,9 +286,11 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.CommandButton cmdMapWarp 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Accept"
             Height          =   375
             Left            =   1080
+            Style           =   1  'Graphical
             TabIndex        =   65
             Top             =   2160
             Width           =   1215
@@ -289,6 +319,7 @@ Begin VB.Form frmEditor_Map
             Width           =   3135
          End
          Begin VB.Label lblMapWarpY 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Y: 0"
             Height          =   255
             Left            =   120
@@ -297,6 +328,7 @@ Begin VB.Form frmEditor_Map
             Width           =   3135
          End
          Begin VB.Label lblMapWarpX 
+            BackColor       =   &H00A0CF00&
             Caption         =   "X: 0"
             Height          =   255
             Left            =   120
@@ -305,6 +337,7 @@ Begin VB.Form frmEditor_Map
             Width           =   3135
          End
          Begin VB.Label lblMapWarp 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Map: 1"
             Height          =   255
             Left            =   120
@@ -314,6 +347,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraShop 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Shop"
          Height          =   1335
          Left            =   1920
@@ -322,14 +356,17 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3135
          Begin VB.CommandButton cmdShop 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Accept"
             Height          =   375
             Left            =   960
+            Style           =   1  'Graphical
             TabIndex        =   68
             Top             =   720
             Width           =   1215
          End
          Begin VB.ComboBox cmbShop 
+            BackColor       =   &H00D0AFD0&
             Height          =   300
             Left            =   120
             Style           =   2  'Dropdown List
@@ -339,6 +376,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraKeyOpen 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Key Open"
          Height          =   2055
          Left            =   1800
@@ -347,9 +385,11 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.CommandButton cmdKeyOpen 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Accept"
             Height          =   375
             Left            =   1080
+            Style           =   1  'Graphical
             TabIndex        =   57
             Top             =   1440
             Width           =   1215
@@ -369,6 +409,7 @@ Begin VB.Form frmEditor_Map
             Width           =   3015
          End
          Begin VB.Label lblKeyY 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Y: 0"
             Height          =   255
             Left            =   120
@@ -377,6 +418,7 @@ Begin VB.Form frmEditor_Map
             Width           =   3015
          End
          Begin VB.Label lblKeyX 
+            BackColor       =   &H00A0CF00&
             Caption         =   "X: 0"
             Height          =   255
             Left            =   120
@@ -386,6 +428,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraMapKey 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Map Key"
          Height          =   1815
          Left            =   1800
@@ -399,7 +442,7 @@ Begin VB.Form frmEditor_Map
             BackColor       =   &H00000000&
             BorderStyle     =   0  'None
             BeginProperty Font 
-               Name            =   "MS Sans Serif"
+               Name            =   "Arial"
                Size            =   8.25
                Charset         =   238
                Weight          =   400
@@ -418,14 +461,17 @@ Begin VB.Form frmEditor_Map
             Width           =   480
          End
          Begin VB.CommandButton cmdMapKey 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Accept"
             Height          =   375
             Left            =   1080
+            Style           =   1  'Graphical
             TabIndex        =   50
             Top             =   1320
             Width           =   1215
          End
          Begin VB.CheckBox chkMapKey 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Take key away upon use."
             Height          =   255
             Left            =   120
@@ -445,6 +491,7 @@ Begin VB.Form frmEditor_Map
             Width           =   2535
          End
          Begin VB.Label lblMapKey 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Item: None"
             Height          =   255
             Left            =   120
@@ -454,6 +501,7 @@ Begin VB.Form frmEditor_Map
          End
       End
       Begin VB.Frame fraMapItem 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Map Item"
          Height          =   1815
          Left            =   1800
@@ -462,9 +510,11 @@ Begin VB.Form frmEditor_Map
          Visible         =   0   'False
          Width           =   3375
          Begin VB.CommandButton cmdMapItem 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Accept"
             Height          =   375
             Left            =   1200
+            Style           =   1  'Graphical
             TabIndex        =   45
             Top             =   1200
             Width           =   1215
@@ -494,7 +544,7 @@ Begin VB.Form frmEditor_Map
             BackColor       =   &H00000000&
             BorderStyle     =   0  'None
             BeginProperty Font 
-               Name            =   "MS Sans Serif"
+               Name            =   "Arial"
                Size            =   8.25
                Charset         =   238
                Weight          =   400
@@ -513,6 +563,7 @@ Begin VB.Form frmEditor_Map
             Width           =   480
          End
          Begin VB.Label lblMapItem 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Item: None x0"
             Height          =   255
             Left            =   120
@@ -523,22 +574,27 @@ Begin VB.Form frmEditor_Map
       End
    End
    Begin VB.CommandButton cmdCancel 
+      BackColor       =   &H00D0FFD0&
       Caption         =   "Cancel"
       Height          =   375
       Left            =   5400
+      Style           =   1  'Graphical
       TabIndex        =   10
       Top             =   6960
       Width           =   1815
    End
    Begin VB.CommandButton cmdProperties 
+      BackColor       =   &H00D0FFD0&
       Caption         =   "Properties"
       Height          =   375
       Left            =   120
+      Style           =   1  'Graphical
       TabIndex        =   12
       Top             =   6960
       Width           =   1815
    End
    Begin VB.Frame Frame2 
+      BackColor       =   &H00A0CF00&
       Caption         =   "Type"
       Height          =   1335
       Left            =   5760
@@ -547,6 +603,7 @@ Begin VB.Form frmEditor_Map
       Width           =   1455
       Begin VB.OptionButton optEvent 
          Alignment       =   1  'Right Justify
+         BackColor       =   &H00A0CF00&
          Caption         =   "Events"
          Height          =   255
          Left            =   360
@@ -556,6 +613,7 @@ Begin VB.Form frmEditor_Map
       End
       Begin VB.OptionButton optBlock 
          Alignment       =   1  'Right Justify
+         BackColor       =   &H00A0CF00&
          Caption         =   "Block"
          Height          =   255
          Left            =   480
@@ -565,6 +623,7 @@ Begin VB.Form frmEditor_Map
       End
       Begin VB.OptionButton optAttribs 
          Alignment       =   1  'Right Justify
+         BackColor       =   &H00A0CF00&
          Caption         =   "Attributes"
          Height          =   255
          Left            =   120
@@ -574,6 +633,7 @@ Begin VB.Form frmEditor_Map
       End
       Begin VB.OptionButton optLayers 
          Alignment       =   1  'Right Justify
+         BackColor       =   &H00A0CF00&
          Caption         =   "Layers"
          Height          =   255
          Left            =   360
@@ -594,7 +654,7 @@ Begin VB.Form frmEditor_Map
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   8.25
          Charset         =   238
          Weight          =   400
@@ -620,6 +680,7 @@ Begin VB.Form frmEditor_Map
       Width           =   255
    End
    Begin VB.Frame fraTileSet 
+      BackColor       =   &H00A0CF00&
       Caption         =   "Tileset: 0"
       Height          =   855
       Left            =   120
@@ -638,14 +699,17 @@ Begin VB.Form frmEditor_Map
       End
    End
    Begin VB.CommandButton cmdSend 
+      BackColor       =   &H00D0FFD0&
       Caption         =   "Send"
       Height          =   375
       Left            =   3480
+      Style           =   1  'Graphical
       TabIndex        =   11
       Top             =   6960
       Width           =   1815
    End
    Begin VB.Frame fraLayers 
+      BackColor       =   &H00A0CF00&
       Caption         =   "Layers"
       Height          =   5415
       Left            =   5760
@@ -653,6 +717,7 @@ Begin VB.Form frmEditor_Map
       Top             =   120
       Width           =   1455
       Begin VB.Frame Frame3 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Random tile"
          Height          =   1215
          Left            =   0
@@ -660,9 +725,11 @@ Begin VB.Form frmEditor_Map
          Top             =   3000
          Width           =   1455
          Begin VB.CommandButton cmdRandomTile 
+            BackColor       =   &H00D0FFD0&
             Caption         =   "Place"
             Height          =   255
             Left            =   120
+            Style           =   1  'Graphical
             TabIndex        =   97
             Top             =   840
             Width           =   1215
@@ -678,6 +745,7 @@ Begin VB.Form frmEditor_Map
             Width           =   1215
          End
          Begin VB.Label lblFrequency 
+            BackColor       =   &H00A0CF00&
             Caption         =   "Freq.: 75"
             Height          =   255
             Left            =   120
@@ -695,14 +763,17 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.CommandButton cmdFill 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Fill"
          Height          =   390
          Left            =   120
+         Style           =   1  'Graphical
          TabIndex        =   19
          Top             =   4800
          Width           =   1215
       End
       Begin VB.OptionButton optLayer 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Fringe"
          Height          =   255
          Index           =   4
@@ -712,6 +783,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optLayer 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Mask"
          Height          =   255
          Index           =   2
@@ -721,6 +793,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optLayer 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Ground"
          Height          =   255
          Index           =   1
@@ -731,6 +804,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optLayer 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Fringe2"
          Height          =   255
          Index           =   5
@@ -740,6 +814,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optLayer 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Mask2"
          Height          =   255
          Index           =   3
@@ -749,15 +824,18 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.CommandButton cmdClear 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Clear"
          Height          =   375
          Left            =   120
+         Style           =   1  'Graphical
          TabIndex        =   16
          Top             =   4320
          Width           =   1215
       End
       Begin VB.Label lblAutotile 
          Alignment       =   2  'Center
+         BackColor       =   &H00A0CF00&
          Caption         =   "Normal"
          Height          =   255
          Left            =   120
@@ -767,6 +845,7 @@ Begin VB.Form frmEditor_Map
       End
    End
    Begin VB.Frame fraAttribs 
+      BackColor       =   &H00A0CF00&
       Caption         =   "Attributes"
       Height          =   5415
       Left            =   5760
@@ -775,6 +854,7 @@ Begin VB.Form frmEditor_Map
       Visible         =   0   'False
       Width           =   1455
       Begin VB.OptionButton optSound 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Sound"
          Height          =   270
          Left            =   120
@@ -783,6 +863,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optSlide 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Slide"
          Height          =   270
          Left            =   120
@@ -791,6 +872,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optTrap 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Trap"
          Height          =   270
          Left            =   120
@@ -799,6 +881,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optHeal 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Heal"
          Height          =   270
          Left            =   120
@@ -807,6 +890,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optBank 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Bank"
          Height          =   270
          Left            =   120
@@ -815,6 +899,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optShop 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Shop"
          Height          =   270
          Left            =   120
@@ -823,6 +908,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optNpcSpawn 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Npc Spawn"
          Height          =   270
          Left            =   120
@@ -831,6 +917,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optDoor 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Door"
          Enabled         =   0   'False
          Height          =   255
@@ -840,6 +927,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optResource 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Resource"
          Height          =   240
          Left            =   120
@@ -848,6 +936,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optKeyOpen 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Key Open"
          Height          =   240
          Left            =   120
@@ -856,6 +945,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optBlocked 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Blocked"
          Height          =   255
          Left            =   120
@@ -865,6 +955,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optWarp 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Warp"
          Height          =   255
          Left            =   120
@@ -873,14 +964,17 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.CommandButton cmdClear2 
+         BackColor       =   &H00D0FFD0&
          Caption         =   "Clear"
          Height          =   390
          Left            =   120
+         Style           =   1  'Graphical
          TabIndex        =   6
          Top             =   4920
          Width           =   1215
       End
       Begin VB.OptionButton optItem 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Item"
          Height          =   270
          Left            =   120
@@ -889,6 +983,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optNpcAvoid 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Npc Avoid"
          Height          =   270
          Left            =   120
@@ -897,6 +992,7 @@ Begin VB.Form frmEditor_Map
          Width           =   1215
       End
       Begin VB.OptionButton optKey 
+         BackColor       =   &H00A0CF00&
          Caption         =   "Key"
          Height          =   270
          Left            =   120
@@ -907,6 +1003,7 @@ Begin VB.Form frmEditor_Map
    End
    Begin VB.Label Label1 
       Alignment       =   2  'Center
+      BackColor       =   &H00A0CF00&
       Caption         =   "Drag mouse to select multiple tiles"
       BeginProperty Font 
          Name            =   "Verdana"
