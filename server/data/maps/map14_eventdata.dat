@@ -188,7 +188,8 @@ CommandList20CommandCount=1
 CommandList20ParentList=11
 CommandList21CommandCount=0
 CommandList21ParentList=11
-CommandList11Command2Text1=Log 2: January 21st 2014.
+CommandList11Command2Text1=Log 2: January 21st 2014.                                                                                This log was deleted by curse of the Enter Key on your keyboard, and I have no idea what I said before the true log got erased.
+Testytest
 Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
 Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
 Something happened to this log and everything but date disapeared. This log was about Meen being the first admin tryout. Also, it was the first day I ever had anyone on the server. :D
@@ -211,7 +212,7 @@ CommandList11Command3ConditionalBranchData3=0
 CommandList11Command3ConditionalBranchElseCommandList=0
 CommandList11Command3MoveRouteCount=0
 CommandList11Command4Index=3
-CommandList11Command4Text1=Log 3: January 23 2014
+CommandList11Command4Text1=Log 3: January 23 2014: This log would of been something about no longer being alone in development, others have joined!
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
 Today in efforts to try and stop massive uploading, and downloading for others, I put the project on a SVN Respitory on Google, via Git.
@@ -250,7 +251,7 @@ CommandList11Command5ConditionalBranchData3=0
 CommandList11Command5ConditionalBranchElseCommandList=0
 CommandList11Command5MoveRouteCount=0
 CommandList11Command6Index=3
-CommandList11Command6Text1=Log 4:
+CommandList11Command6Text1=Log 4; February 4th, 2014: I've decided to no longer put a new line after the date because the pain it is to figure out the amount of spaces needed. Also, this is my first journal since the discovery of the ENTER curse, which I now have found a remedy to.
 CommandList11Command6Text2=Stop Reading
 CommandList11Command6Data1=26
 CommandList11Command6Data2=27

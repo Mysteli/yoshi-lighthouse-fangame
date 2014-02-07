@@ -364,7 +364,7 @@ Public Sub PlayerAttackNpc(ByVal attacker As Long, ByVal mapNpcNum As Long, ByVa
     Dim DEF As Long
     Dim mapnum As Long
     Dim npcNum As Long
-    Dim buffer As clsBuffer
+    Dim Buffer As clsBuffer
 
     ' Check for subscript out of range
     If IsPlaying(attacker) = False Or mapNpcNum <= 0 Or mapNpcNum > MAX_MAP_NPCS Or Damage < 0 Then
@@ -458,11 +458,11 @@ Public Sub PlayerAttackNpc(ByVal attacker As Long, ByVal mapNpcNum As Long, ByVa
         Next
         
         ' send death to the map
-        Set buffer = New clsBuffer
-        buffer.WriteLong SNpcDead
-        buffer.WriteLong mapNpcNum
-        SendDataToMap mapnum, buffer.ToArray()
-        Set buffer = Nothing
+        Set Buffer = New clsBuffer
+        Buffer.WriteLong SNpcDead
+        Buffer.WriteLong mapNpcNum
+        SendDataToMap mapnum, Buffer.ToArray()
+        Set Buffer = Nothing
         
         'Loop through entire map and purge NPC from targets
         For i = 1 To Player_HighIndex
@@ -628,7 +628,7 @@ Sub NpcAttackPlayer(ByVal mapNpcNum As Long, ByVal victim As Long, ByVal Damage 
     Dim exp As Long
     Dim mapnum As Long
     Dim i As Long
-    Dim buffer As clsBuffer
+    Dim Buffer As clsBuffer
 
     ' Check for subscript out of range
     If mapNpcNum <= 0 Or mapNpcNum > MAX_MAP_NPCS Or IsPlaying(victim) = False Then
@@ -644,11 +644,11 @@ Sub NpcAttackPlayer(ByVal mapNpcNum As Long, ByVal victim As Long, ByVal Damage 
     Name = Trim$(Npc(MapNpc(mapnum).Npc(mapNpcNum).Num).Name)
     
     ' Send this packet so they can see the npc attacking
-    Set buffer = New clsBuffer
-    buffer.WriteLong SNpcAttack
-    buffer.WriteLong mapNpcNum
-    SendDataToMap mapnum, buffer.ToArray()
-    Set buffer = Nothing
+    Set Buffer = New clsBuffer
+    Buffer.WriteLong SNpcAttack
+    Buffer.WriteLong mapNpcNum
+    SendDataToMap mapnum, Buffer.ToArray()
+    Set Buffer = Nothing
     
     If Damage <= 0 Then
         Exit Sub
@@ -789,7 +789,7 @@ Function CanPlayerAttackPlayer(ByVal attacker As Long, ByVal victim As Long, Opt
     ' Check if map is attackable
     If Not Map(GetPlayerMap(attacker)).Moral = MAP_MORAL_NONE Then
         If GetPlayerPK(victim) = NO Then
-            Call PlayerMsg(attacker, "This is a safe zone!", BrightRed)
+            Call PlayerMsg(attacker, "This is not a PvP area.", BrightGreen)
             Exit Function
         End If
     End If
@@ -828,7 +828,7 @@ Sub PlayerAttackPlayer(ByVal attacker As Long, ByVal victim As Long, ByVal Damag
     Dim exp As Long
     Dim n As Long
     Dim i As Long
-    Dim buffer As clsBuffer
+    Dim Buffer As clsBuffer
 
     ' Check for subscript out of range
     If IsPlaying(attacker) = False Or IsPlaying(victim) = False Or Damage < 0 Then
@@ -1105,7 +1105,7 @@ Public Sub CastSpell(ByVal index As Long, ByVal spellslot As Long, ByVal Target 
     Dim increment As Boolean
     Dim x As Long, y As Long
    
-    Dim buffer As clsBuffer
+    Dim Buffer As clsBuffer
     Dim SpellCastType As Long
    
     DidCast = False
