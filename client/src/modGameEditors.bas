@@ -371,8 +371,8 @@ Dim tmpDir As Byte
         ElseIf frmEditor_Map.optBlock.value Then
             If movedMouse Then Exit Sub
             ' find what tile it is
-            x = x - ((x \ 32) * 32)
-            y = y - ((y \ 32) * 32)
+            x = x - ((x \ 16) * 16)
+            y = y - ((y \ 16) * 16)
             ' see if it hits an arrow
             For i = 1 To 4
                 If x >= DirArrowX(i) And x <= DirArrowX(i) + 8 Then

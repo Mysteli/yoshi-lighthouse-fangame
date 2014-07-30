@@ -28,13 +28,13 @@ Begin VB.Form frmMenu
       AutoSize        =   -1  'True
       BackColor       =   &H00B0C8A8&
       BorderStyle     =   0  'None
-      Height          =   2295
+      Height          =   3195
       Left            =   2880
-      ScaleHeight     =   153
+      ScaleHeight     =   213
       ScaleMode       =   3  'Pixel
       ScaleWidth      =   438
       TabIndex        =   16
-      Top             =   3660
+      Top             =   2760
       Visible         =   0   'False
       Width           =   6570
       Begin VB.PictureBox picSprite 
@@ -47,7 +47,7 @@ Begin VB.Form frmMenu
          ScaleMode       =   3  'Pixel
          ScaleWidth      =   32
          TabIndex        =   26
-         Top             =   870
+         Top             =   1680
          Width           =   480
       End
       Begin VB.ComboBox cmbClass 
@@ -67,13 +67,13 @@ Begin VB.Form frmMenu
          Left            =   2280
          Style           =   2  'Dropdown List
          TabIndex        =   20
-         Top             =   990
+         Top             =   1440
          Width           =   2175
       End
       Begin VB.OptionButton optMale 
          Appearance      =   0  'Flat
          BackColor       =   &H00B0C8A8&
-         Caption         =   "1"
+         Caption         =   "Male"
          BeginProperty Font 
             Name            =   "Georgia"
             Size            =   8.25
@@ -87,14 +87,14 @@ Begin VB.Form frmMenu
          Height          =   255
          Left            =   2280
          TabIndex        =   19
-         Top             =   1485
+         Top             =   1935
          Value           =   -1  'True
          Width           =   975
       End
       Begin VB.OptionButton optFemale 
          Appearance      =   0  'Flat
          BackColor       =   &H00B0C8A8&
-         Caption         =   "2"
+         Caption         =   "Female"
          BeginProperty Font 
             Name            =   "Georgia"
             Size            =   8.25
@@ -109,7 +109,7 @@ Begin VB.Form frmMenu
          Left            =   3360
          MaskColor       =   &H00C8D8C0&
          TabIndex        =   18
-         Top             =   1470
+         Top             =   1920
          Width           =   1095
       End
       Begin VB.TextBox txtCName 
@@ -130,7 +130,7 @@ Begin VB.Form frmMenu
          Left            =   2280
          MaxLength       =   12
          TabIndex        =   21
-         Top             =   270
+         Top             =   720
          Width           =   2775
       End
       Begin VB.Label lblSprite 
@@ -151,13 +151,13 @@ Begin VB.Form frmMenu
          Height          =   210
          Left            =   2280
          TabIndex        =   25
-         Top             =   630
+         Top             =   1080
          Width           =   2775
       End
       Begin VB.Label lblBlank 
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
-         Caption         =   "Color:"
+         Caption         =   "Gender:"
          BeginProperty Font 
             Name            =   "Georgia"
             Size            =   8.25
@@ -172,7 +172,7 @@ Begin VB.Form frmMenu
          Index           =   5
          Left            =   1080
          TabIndex        =   24
-         Top             =   1470
+         Top             =   1920
          Width           =   1095
       End
       Begin VB.Label lblBlank 
@@ -193,7 +193,7 @@ Begin VB.Form frmMenu
          Index           =   4
          Left            =   1080
          TabIndex        =   23
-         Top             =   990
+         Top             =   1440
          Width           =   1095
       End
       Begin VB.Label lblBlank 
@@ -214,7 +214,7 @@ Begin VB.Form frmMenu
          Index           =   2
          Left            =   1440
          TabIndex        =   22
-         Top             =   270
+         Top             =   720
          Width           =   735
       End
       Begin VB.Label lblCAccept 
@@ -234,7 +234,7 @@ Begin VB.Form frmMenu
          Height          =   255
          Left            =   2760
          TabIndex        =   17
-         Top             =   1950
+         Top             =   2400
          Width           =   1215
       End
    End
@@ -242,13 +242,13 @@ Begin VB.Form frmMenu
       AutoSize        =   -1  'True
       BackColor       =   &H00B0C8A8&
       BorderStyle     =   0  'None
-      Height          =   1395
+      Height          =   3195
       Left            =   2880
-      ScaleHeight     =   93
+      ScaleHeight     =   213
       ScaleMode       =   3  'Pixel
       ScaleWidth      =   438
       TabIndex        =   7
-      Top             =   3660
+      Top             =   2760
       Visible         =   0   'False
       Width           =   6570
       Begin VB.TextBox txtRPass2 
@@ -271,7 +271,7 @@ Begin VB.Form frmMenu
          MaxLength       =   20
          PasswordChar    =   "•"
          TabIndex        =   13
-         Top             =   990
+         Top             =   1680
          Width           =   2775
       End
       Begin VB.TextBox txtRPass 
@@ -294,7 +294,7 @@ Begin VB.Form frmMenu
          MaxLength       =   20
          PasswordChar    =   "•"
          TabIndex        =   10
-         Top             =   630
+         Top             =   1320
          Width           =   2775
       End
       Begin VB.TextBox txtRUser 
@@ -315,7 +315,7 @@ Begin VB.Form frmMenu
          Left            =   2520
          MaxLength       =   12
          TabIndex        =   8
-         Top             =   270
+         Top             =   960
          Width           =   2775
       End
       Begin VB.Label lblBlank 
@@ -335,7 +335,7 @@ Begin VB.Form frmMenu
          Index           =   11
          Left            =   1320
          TabIndex        =   14
-         Top             =   990
+         Top             =   1680
          Width           =   1215
       End
       Begin VB.Label txtRAccept 
@@ -375,7 +375,7 @@ Begin VB.Form frmMenu
          Index           =   9
          Left            =   1320
          TabIndex        =   11
-         Top             =   630
+         Top             =   1320
          Width           =   1215
       End
       Begin VB.Label lblBlank 
@@ -395,7 +395,7 @@ Begin VB.Form frmMenu
          Index           =   8
          Left            =   1320
          TabIndex        =   9
-         Top             =   270
+         Top             =   960
          Width           =   1215
       End
    End
@@ -412,13 +412,13 @@ Begin VB.Form frmMenu
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   1350
+      Height          =   3195
       Left            =   2880
-      ScaleHeight     =   90
+      ScaleHeight     =   213
       ScaleMode       =   3  'Pixel
       ScaleWidth      =   438
       TabIndex        =   0
-      Top             =   3630
+      Top             =   2760
       Visible         =   0   'False
       Width           =   6570
       Begin VB.CheckBox chkPass 
@@ -438,7 +438,7 @@ Begin VB.Form frmMenu
          Height          =   255
          Left            =   720
          TabIndex        =   5
-         Top             =   990
+         Top             =   2040
          Width           =   1815
       End
       Begin VB.TextBox txtLPass 
@@ -461,7 +461,7 @@ Begin VB.Form frmMenu
          MaxLength       =   20
          PasswordChar    =   "•"
          TabIndex        =   3
-         Top             =   630
+         Top             =   1440
          Width           =   2775
       End
       Begin VB.TextBox txtLUser 
@@ -482,7 +482,7 @@ Begin VB.Form frmMenu
          Left            =   2520
          MaxLength       =   12
          TabIndex        =   1
-         Top             =   270
+         Top             =   1080
          Width           =   2775
       End
       Begin VB.Label lblLAccept 
@@ -502,7 +502,7 @@ Begin VB.Form frmMenu
          Height          =   255
          Left            =   2760
          TabIndex        =   6
-         Top             =   990
+         Top             =   2040
          Width           =   1215
       End
       Begin VB.Label lblBlank 
@@ -522,7 +522,7 @@ Begin VB.Form frmMenu
          Index           =   3
          Left            =   1320
          TabIndex        =   4
-         Top             =   630
+         Top             =   1440
          Width           =   1215
       End
       Begin VB.Label lblBlank 
@@ -542,7 +542,7 @@ Begin VB.Form frmMenu
          Index           =   0
          Left            =   1320
          TabIndex        =   2
-         Top             =   270
+         Top             =   1080
          Width           =   1215
       End
    End
@@ -550,12 +550,12 @@ Begin VB.Form frmMenu
       AutoSize        =   -1  'True
       BackColor       =   &H00B0C8A8&
       BorderStyle     =   0  'None
-      Height          =   1845
+      Height          =   3195
       Left            =   2880
-      ScaleHeight     =   1845
+      ScaleHeight     =   3195
       ScaleWidth      =   6570
       TabIndex        =   15
-      Top             =   3660
+      Top             =   2760
       Visible         =   0   'False
       Width           =   6570
    End
@@ -563,12 +563,12 @@ Begin VB.Form frmMenu
       AutoSize        =   -1  'True
       BackColor       =   &H00B0C8A8&
       BorderStyle     =   0  'None
-      Height          =   1395
+      Height          =   3195
       Left            =   2880
-      ScaleHeight     =   1395
+      ScaleHeight     =   3195
       ScaleWidth      =   6570
       TabIndex        =   27
-      Top             =   3660
+      Top             =   2760
       Width           =   6570
       Begin VB.Label lblNews 
          Alignment       =   2  'Center
@@ -585,9 +585,9 @@ Begin VB.Form frmMenu
          EndProperty
          ForeColor       =   &H00909058&
          Height          =   1575
-         Left            =   1700
+         Left            =   1800
          TabIndex        =   28
-         Top             =   280
+         Top             =   1080
          Width           =   3135
       End
    End
@@ -807,6 +807,7 @@ errorhandler:
     Exit Sub
 End Sub
 
+
 Private Sub lblLAccept_Click()
     ' If debug mode, handle error then exit out
     If Options.Debug = 1 Then On Error GoTo errorhandler
@@ -950,6 +951,7 @@ errorhandler:
     Err.Clear
     Exit Sub
 End Sub
+
 
 ' Register
 Private Sub txtRAccept_Click()

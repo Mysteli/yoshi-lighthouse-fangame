@@ -1,5 +1,5 @@
 [Events]
-EventCount=6
+EventCount=5
 [Event1]
 Global=0
 x=12
@@ -751,7 +751,7 @@ CommandList9Command1ConditionalBranchElseCommandList=0
 CommandList9Command1MoveRouteCount=0
 [Event3]
 Global=0
-x=39
+x=40
 y=24
 PageCount=1
 [Event3Page1]
@@ -1225,8 +1225,8 @@ CommandList5Command1ConditionalBranchElseCommandList=0
 CommandList5Command1MoveRouteCount=0
 [Event4]
 Global=0
-x=40
-y=24
+x=64
+y=47
 PageCount=1
 [Event4Page1]
 chkVariable=0
@@ -1260,9 +1260,9 @@ CommandList1CommandCount=1
 CommandList1ParentList=0
 CommandList1Command1Index=19
 CommandList1Command1Data1=1
-CommandList1Command1Data2=64
-CommandList1Command1Data3=47
-CommandList1Command1Data4=4
+CommandList1Command1Data2=40
+CommandList1Command1Data3=25
+CommandList1Command1Data4=2
 CommandList1Command1Data5=0
 CommandList1Command1Data6=0
 CommandList1Command1ConditionalBranchCommandList=0
@@ -1968,9 +1968,9 @@ SwitchCompare=0
 SelfSwitchCompare=0
 [Event5]
 Global=0
-x=64
-y=47
-PageCount=1
+x=100
+y=42
+PageCount=0
 [Event5Page1]
 chkVariable=0
 VariableIndex=0

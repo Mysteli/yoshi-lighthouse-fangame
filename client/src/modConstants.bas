@@ -2,8 +2,8 @@ Attribute VB_Name = "modConstants"
 Option Explicit
 
 ' API Declares
-Public Declare Sub CopyMemory Lib "kernel32.dll" Alias "RtlMoveMemory" (Destination As Any, Source As Any, ByVal length As Long)
-Public Declare Function CallWindowProc Lib "user32" Alias "CallWindowProcA" (ByVal lpPrevWndFunc As Long, ByVal hwnd As Long, ByRef Msg() As Byte, ByVal wParam As Long, ByVal lParam As Long) As Long
+Public Declare Sub CopyMemory Lib "kernel32.dll" Alias "RtlMoveMemory" (Destination As Any, Source As Any, ByVal Length As Long)
+Public Declare Function CallWindowProc Lib "user32" Alias "CallWindowProcA" (ByVal lpPrevWndFunc As Long, ByVal hWnd As Long, ByRef Msg() As Byte, ByVal wParam As Long, ByVal lParam As Long) As Long
 Public Declare Function GetForegroundWindow Lib "user32" () As Long
 
 ' *******************************************************************************
@@ -113,8 +113,8 @@ Public Const WALK_SPEED As Byte = 7
 Public Const RUN_SPEED As Byte = 12
 
 ' Tile size constants
-Public Const PIC_X As Long = 32
-Public Const PIC_Y As Long = 32
+Public Const PIC_X As Long = 16
+Public Const PIC_Y As Long = 16
 
 ' Sprite, item, spell size constants
 Public Const SIZE_X As Long = 32
@@ -197,8 +197,8 @@ Public Const SEX_FEMALE As Byte = 1
 
 ' Map constants
 Public Const MAX_MAPS As Long = 100
-Public Const MAX_MAPX As Byte = 24
-Public Const MAX_MAPY As Byte = 18
+Public Const MAX_MAPX As Byte = 48
+Public Const MAX_MAPY As Byte = 36
 Public Const MAP_MORAL_NONE As Byte = 0
 Public Const MAP_MORAL_SAFE As Byte = 1
 

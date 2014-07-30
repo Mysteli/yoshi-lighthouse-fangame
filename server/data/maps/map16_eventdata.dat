@@ -1,5 +1,5 @@
 [Events]
-EventCount=5
+EventCount=6
 [Event1]
 Global=0
 x=12
@@ -40,7 +40,7 @@ Position=0
 CommandList1CommandCount=1
 CommandList1ParentList=0
 CommandList1Command1Index=2
-CommandList1Command1Text1=This way to (Pipe's Destination.)
+CommandList1Command1Text1=This way to Piverty.
 Perhaps there could be another room in here, before you get to Meen's room? (Not sure.)
 Perhaps there could be another room in here, before you get to Meen's room? (Not sure.)
 Perhaps there could be another room in here, before you get to Meen's room? (Not sure.)
@@ -286,6 +286,7 @@ CommandList1CommandCount=1
 CommandList1ParentList=0
 CommandList1Command1Index=2
 CommandList1Command1Text1=Teawater's house.
+(Beware. No exit!)
 
 Note:  Teawater may sell basic gear to help get through the ancient trials? (Perhaps some heat-proof clothes to keep you cool?, Quest may be required.)
 
@@ -627,8 +628,8 @@ CommandList1Command1MoveRoute8Data5=0
 CommandList1Command1MoveRoute8Data6=0
 [Event6]
 Global=0
-x=21
-y=17
+x=10
+y=18
 PageCount=1
 [Event6Page1]
 chkVariable=0
@@ -649,12 +650,12 @@ GraphicX=0
 GraphicY=0
 GraphicX2=0
 GraphicY2=0
-MoveType=2
+MoveType=0
 MoveSpeed=0
 MoveFreq=0
 IgnoreMoveRoute=0
 RepeatMoveRoute=0
-MoveRouteCount=6
+MoveRouteCount=0
 MoveRoute1Index=1
 MoveRoute1Data1=0
 MoveRoute1Data2=0
@@ -699,8 +700,38 @@ MoveRoute6Data5=0
 MoveRoute6Data6=0
 WalkAnim=0
 DirFix=0
-WalkThrough=0
+WalkThrough=1
 ShowName=0
-Trigger=0
-CommandListCount=0
+Trigger=1
+CommandListCount=1
 Position=0
+CommandList1CommandCount=2
+CommandList1ParentList=0
+CommandList1Command1Index=41
+CommandList1Command1Data1=250
+CommandList1Command1Data2=30
+CommandList1Command1Data3=9
+CommandList1Command1Data4=2
+CommandList1Command1Data5=0
+CommandList1Command1Data6=0
+CommandList1Command1ConditionalBranchCommandList=0
+CommandList1Command1ConditionalBranchCondition=0
+CommandList1Command1ConditionalBranchData1=0
+CommandList1Command1ConditionalBranchData2=0
+CommandList1Command1ConditionalBranchData3=0
+CommandList1Command1ConditionalBranchElseCommandList=0
+CommandList1Command1MoveRouteCount=0
+CommandList1Command2Index=19
+CommandList1Command2Data1=15
+CommandList1Command2Data2=30
+CommandList1Command2Data3=9
+CommandList1Command2Data4=2
+CommandList1Command2Data5=0
+CommandList1Command2Data6=0
+CommandList1Command2ConditionalBranchCommandList=0
+CommandList1Command2ConditionalBranchCondition=0
+CommandList1Command2ConditionalBranchData1=0
+CommandList1Command2ConditionalBranchData2=0
+CommandList1Command2ConditionalBranchData3=0
+CommandList1Command2ConditionalBranchElseCommandList=0
+CommandList1Command2MoveRouteCount=0
