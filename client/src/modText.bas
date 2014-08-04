@@ -57,7 +57,7 @@ Public Sub RenderText(ByRef UseFont As CustomFont, ByVal text As String, ByVal x
 Dim TempVA(0 To 3)  As TLVERTEX
 Dim TempVAS(0 To 3) As TLVERTEX
 Dim TempStr() As String
-Dim count As Integer
+Dim Count As Integer
 Dim Ascii() As Byte
 Dim Row As Integer
 Dim u As Single
@@ -93,7 +93,7 @@ Dim yOffset As Single
     For i = 0 To UBound(TempStr)
         If Len(TempStr(i)) > 0 Then
             yOffset = i * UseFont.CharHeight
-            count = 0
+            Count = 0
             'Convert the characters to the ascii value
             Ascii() = StrConv(TempStr(i), vbFromUnicode)
             
@@ -103,9 +103,9 @@ Dim yOffset As Single
                 Call CopyMemory(TempVA(0), UseFont.HeaderInfo.CharVA(Ascii(j - 1)).Vertex(0), FVF_SIZE * 4)
                 
                 'Set up the verticies
-                TempVA(0).x = x + count
+                TempVA(0).x = x + Count
                 TempVA(0).y = y + yOffset
-                TempVA(1).x = TempVA(1).x + x + count
+                TempVA(1).x = TempVA(1).x + x + Count
                 TempVA(1).y = TempVA(0).y
                 TempVA(2).x = TempVA(0).x
                 TempVA(2).y = TempVA(2).y + TempVA(0).y
@@ -122,7 +122,7 @@ Dim yOffset As Single
                 Call Direct3D_Device.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 2, TempVA(0), Len(TempVA(0)))
                 
                 'Shift over the the position to render the next character
-                count = count + UseFont.HeaderInfo.CharWidth(Ascii(j - 1))
+                Count = Count + UseFont.HeaderInfo.CharWidth(Ascii(j - 1))
                 
                 'Check to reset the color
                 If ResetColor Then
@@ -382,7 +382,7 @@ Public Function DrawMapAttributes()
     ' If debug mode, handle error then exit out
     If Options.Debug = 1 Then On Error GoTo errorhandler
 
-    If frmEditor_Map.optAttribs.value Then
+    If frmEditor_Map.optAttribs.Value Then
         For x = TileView.Left To TileView.Right
             For y = TileView.Top To TileView.Bottom
                 If IsValidMapPoint(x, y) Then
@@ -545,9 +545,9 @@ Dim name As String
         End If
     ElseIf Map.MapEvents(Index).GraphicType = 2 Then
         If Map.MapEvents(Index).GraphicY2 > 0 Then
-            TextY = ConvertMapY(Map.MapEvents(Index).y * PIC_Y) + Map.MapEvents(Index).yOffset - ((Map.MapEvents(Index).GraphicY2 - Map.MapEvents(Index).GraphicY) * 32) + 16
+            TextY = ConvertMapY(Map.MapEvents(Index).y * PIC_Y) + Map.MapEvents(Index).yOffset - ((Map.MapEvents(Index).GraphicY2 - Map.MapEvents(Index).GraphicY) * 16) + 16
         Else
-            TextY = ConvertMapY(Map.MapEvents(Index).y * PIC_Y) + Map.MapEvents(Index).yOffset - 32 + 16
+            TextY = ConvertMapY(Map.MapEvents(Index).y * PIC_Y) + Map.MapEvents(Index).yOffset - 16 + 16
         End If
     End If
 
@@ -570,16 +570,16 @@ Dim theArray() As String, x As Long, y As Long, i As Long, MaxWidth As Long, x2 
             ' it's a player
             If GetPlayerMap(.target) = GetPlayerMap(MyIndex) Then
                 ' it's on our map - get co-ords
-                x = ConvertMapX((Player(.target).x * 32) + Player(.target).xOffset) + 16
-                y = ConvertMapY((Player(.target).y * 32) + Player(.target).yOffset) - 40
+                x = ConvertMapX((Player(.target).x * 16) + Player(.target).xOffset) + 8
+                y = ConvertMapY((Player(.target).y * 16) + Player(.target).yOffset) - 40
             End If
         ElseIf .targetType = TARGET_TYPE_NPC Then
             ' it's on our map - get co-ords
-            x = ConvertMapX((MapNpc(.target).x * 32) + MapNpc(.target).xOffset) + 16
-            y = ConvertMapY((MapNpc(.target).y * 32) + MapNpc(.target).yOffset) - 40
+            x = ConvertMapX((MapNpc(.target).x * 16) + MapNpc(.target).xOffset) + 8
+            y = ConvertMapY((MapNpc(.target).y * 16) + MapNpc(.target).yOffset) - 40
         ElseIf .targetType = TARGET_TYPE_EVENT Then
-            x = ConvertMapX((Map.MapEvents(.target).x * 32) + Map.MapEvents(.target).xOffset) + 16
-            y = ConvertMapY((Map.MapEvents(.target).y * 32) + Map.MapEvents(.target).yOffset) - 40
+            x = ConvertMapX((Map.MapEvents(.target).x * 16) + Map.MapEvents(.target).xOffset) + 8
+            y = ConvertMapY((Map.MapEvents(.target).y * 16) + Map.MapEvents(.target).yOffset) - 40
         End If
         
         ' word wrap the text
@@ -650,7 +650,7 @@ End Sub
 
 Public Sub UpdateChatArray()
 Dim Chunk As Integer
-Dim count As Integer
+Dim Count As Integer
 Dim LoopC As Byte
 Dim Ascii As Byte
 Dim Row As Long
@@ -706,7 +706,7 @@ Dim yOffset As Long
         y2 = y - (LoopC * yOffset) + (Chunk * ChatBufferChunk * yOffset) - 32
         
         'Loop through each line if there are line breaks (vbCrLf)
-        count = 0   'Counts the offset value we are on
+        Count = 0   'Counts the offset value we are on
         If LenB(ChatTextBuffer(LoopC).text) <> 0 Then  'Dont bother with empty strings
             
             'Loop through the characters
@@ -723,7 +723,7 @@ Dim yOffset As Long
                 ' ****** Rectangle | Top Left ******
                 With ChatVA(0 + (6 * Pos))
                     .Color = TempColor
-                    .x = (x) + count
+                    .x = (x) + Count
                     .y = (y2)
                     .TU = u
                     .TV = v
@@ -733,7 +733,7 @@ Dim yOffset As Long
                 ' ****** Rectangle | Bottom Left ******
                 With ChatVA(1 + (6 * Pos))
                     .Color = TempColor
-                    .x = (x) + count
+                    .x = (x) + Count
                     .y = (y2) + Font_Default.HeaderInfo.CellHeight
                     .TU = u
                     .TV = v + Font_Default.RowFactor
@@ -743,7 +743,7 @@ Dim yOffset As Long
                 ' ****** Rectangle | Bottom Right ******
                 With ChatVA(2 + (6 * Pos))
                     .Color = TempColor
-                    .x = (x) + count + Font_Default.HeaderInfo.CellWidth
+                    .x = (x) + Count + Font_Default.HeaderInfo.CellWidth
                     .y = (y2) + Font_Default.HeaderInfo.CellHeight
                     .TU = u + Font_Default.ColFactor
                     .TV = v + Font_Default.RowFactor
@@ -757,7 +757,7 @@ Dim yOffset As Long
                 ' ****** Rectangle | Top Right ******
                 With ChatVA(4 + (6 * Pos))
                     .Color = TempColor
-                    .x = (x) + count + Font_Default.HeaderInfo.CellWidth
+                    .x = (x) + Count + Font_Default.HeaderInfo.CellWidth
                     .y = (y2)
                     .TU = u + Font_Default.ColFactor
                     .TV = v
@@ -770,7 +770,7 @@ Dim yOffset As Long
                 Pos = Pos + 1
 
                 'Shift over the the position to render the next character
-                count = count + Font_Default.HeaderInfo.CharWidth(Ascii)
+                Count = Count + Font_Default.HeaderInfo.CharWidth(Ascii)
                 
                 'Check to reset the color
                 If ResetColor Then

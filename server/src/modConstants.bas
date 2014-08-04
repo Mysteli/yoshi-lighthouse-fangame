@@ -171,8 +171,8 @@ Public Const TARGET_TYPE_EVENT As Byte = 4
 ' ********************************************
 ' Default starting location [Server Only]
 Public Const START_MAP As Long = 1
-Public Const START_X As Long = 11
-Public Const START_Y As Long = 10
+Public Const START_X As Long = 18
+Public Const START_Y As Long = 21
 
 ' Scrolling action message constants
 Public Const ACTIONMSG_STATIC As Long = 0

@@ -1,5 +1,5 @@
-modConstants = 23, 23, 982, 377, 
-modDatabase = 46, 46, 1003, 400, Z
+modConstants = 23, 23, 982, 377, Z
+modDatabase = 46, 46, 1003, 400, 
 modGameLogic = 184, 184, 1161, 628, 
 modGeneral = 138, 138, 1097, 492, 
 modGlobals = 138, 138, 1097, 504, C
